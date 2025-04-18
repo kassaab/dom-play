@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-     <title>Title Goes Here</title>
-  <meta charset="utf-8" />
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/nav.css" />
- </head>
- <body>
-     <header>
-     <h1>Title Goes Here</h1>
+
+<head>
+    <title>Bug in the Code</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <style>
+        .hamlet {
+            /* background-color: yellow; */
+        }
+        
+        div#play span {
+            /* background-color: blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bug in the Code</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <!-- <a href="#" target="_blank">Name of project goes here</a> -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
-     </header>
-     
-   <main class="wrapper">
-    <p>Content goes here</p>
-     <footer>
-      <p><small>&copy; 2021 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
-          <a id="html-checker" href="#">Check HTML</a> ~ 
-          <a id="css-checker" href="#">Check CSS</a></small>
-     </p>
-    </footer>
-  </main>
-  <script src="js/main.js"></script>
- </body>
+    </header>
+
+    <main class="wrapper">
+        <div id="play">
+            <p><span data-actor="Danny">Danny: You're either in or you're out. Right now.</span></p>
+            <p><span data-actor="Linus">Linus: What’s the target?</span></p>
+            <p><span data-actor="Rusty">Rusty: It’s not your concern. Not until you say yes.</span></p>
+            <p><span data-actor="Linus">Linus: I need to know what I’m getting into.</span></p>
+            <p><span data-actor="Danny">Danny: Okay. We're going to rob the Bellagio, the Mirage, and the MGM Grand.</span></p>
+            <p><span data-actor="Rusty">Rusty: All at the same time.</span></p>            
+        </div>
+        <footer>
+            <p><small>&copy; 2025 by Abraham, All Rights Reserved ~ 
+          <a id="html-checker " href="https://validator.w3.org/ ">Check HTML</a> ~ 
+          <a id="css-checker " href="https://jigsaw.w3.org/css-validator/">Check CSS</a></small>
+            </p>
+        </footer>
+    </main>
+    <script src="js/main.js "></script>
+    <script src="js/dom-play.js "></script>
+</body>
+
 </html>
+
+
